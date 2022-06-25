@@ -8,7 +8,7 @@ package com.xxoo.数据结构算法.排序算法;
 public class InsertSort {
 
 
-    public static void insertSort(int[] arr){
+    public static void insertSort1(int[] arr){
         if(arr == null || arr.length < 2){
             return;
         }
@@ -18,9 +18,24 @@ public class InsertSort {
         // 0 ~ 2范围内有序
         // 0 ~ n-1范围内有序
         for(int i=1; i<arr.length; i++){
-            while(i - 1 >= 0 && arr[i-1] > arr[i]){
-                SortCommon.swap(arr,i-1,i);
-                i--;
+            int newNumIndex = i;
+            while(newNumIndex - 1 >= 0 && arr[newNumIndex-1] > arr[newNumIndex]){
+                SortCommon.swap(arr,newNumIndex-1,newNumIndex);
+                newNumIndex--;
+            }
+        }
+    }
+
+
+
+    public static void insertSort2(int[] arr){
+        if(arr == null || arr.length < 2){
+            return;
+        }
+
+        for(int i=1; i<arr.length; i++){
+            for(int j= i-1; j >= 0 && arr[j] > arr[j + 1]; j--){
+                SortCommon.swap(arr,j,j+1);
             }
         }
     }
@@ -29,7 +44,8 @@ public class InsertSort {
     public static void main(String[] args) {
         int[] arr = {6,4,7,23,54,9,39,5,76,88};
         SortCommon.printArr(arr);
-        insertSort(arr);
+        //insertSort1(arr);
+        insertSort2(arr);
         SortCommon.printArr(arr);
     }
 }
