@@ -42,7 +42,6 @@ public class Random {
 
         System.out.println("================================");
         int k = 9;
-
         int[] counts = new int[9];      //counts[0]表示0出现的次数、counts[1]表示1出现的次数
         for(int i = 0; i<testTimes; i++){
             int answer = (int) (Math.random() * k);    //返回左闭右闭[0-8]范围内的数
@@ -51,6 +50,10 @@ public class Random {
         for(int i=0; i<k; i++){
             System.out.println(i + "这个数出现了" + counts[i] + "次");
         }
+
+
+
+
 
 
 

@@ -13,10 +13,10 @@ public class InsertSort {
             return;
         }
 
-        // 0 ~ 0范围内有序
-        // 0 ~ 1范围内有序
-        // 0 ~ 2范围内有序
-        // 0 ~ n-1范围内有序
+        // 0 ~ 0 范围内有序已经确定
+        // 0 ~ 1 范围内有序
+        // 0 ~ 2 范围内有序
+        // 0 ~ n-1 范围内有序
         for(int i=1; i<arr.length; i++){
             int newNumIndex = i;
             while(newNumIndex - 1 >= 0 && arr[newNumIndex-1] > arr[newNumIndex]){
