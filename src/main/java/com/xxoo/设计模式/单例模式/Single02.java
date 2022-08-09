@@ -1,4 +1,4 @@
-package com.xxoo.设计模式.单例;
+package com.xxoo.设计模式.单例模式;
 
 /**
  * 懒汉式（lazy loading）：虽然达到了按需初始化的目的，但却带来线程不安全的问题
