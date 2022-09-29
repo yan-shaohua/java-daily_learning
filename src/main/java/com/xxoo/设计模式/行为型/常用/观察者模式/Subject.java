@@ -1,4 +1,4 @@
-package com.xxoo.设计模式.观察者模式;
+package com.xxoo.设计模式.行为型.常用.观察者模式;
 
 import java.util.ArrayList;
 import java.util.List;

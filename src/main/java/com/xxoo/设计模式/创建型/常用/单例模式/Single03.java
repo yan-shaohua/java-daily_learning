@@ -1,4 +1,4 @@
-package com.xxoo.设计模式.单例模式;
+package com.xxoo.设计模式.创建型.常用.单例模式;
 
 /**
  * 静态内部类方式

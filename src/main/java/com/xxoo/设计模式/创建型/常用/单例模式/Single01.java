@@ -1,4 +1,4 @@
-package com.xxoo.设计模式.单例模式;
+package com.xxoo.设计模式.创建型.常用.单例模式;
 
 /**
  * 饿汉式（Spring默认）：JVM保证线程安全，不管用到与否，都会初始化到内存中

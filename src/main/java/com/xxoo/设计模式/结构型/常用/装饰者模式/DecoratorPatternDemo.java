@@ -1,4 +1,4 @@
-package com.xxoo.设计模式.装饰器模式;
+package com.xxoo.设计模式.结构型.常用.装饰者模式;
 
 /**
  * @Author yanshaohua
